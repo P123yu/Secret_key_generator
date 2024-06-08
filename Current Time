@@ -1,0 +1,10 @@
+// Get Current Time
+
+import java.time.LocalTime;
+import java.time.ZoneId;
+public class Main {
+    public static void main(String[] args) {
+        LocalTime istTime = LocalTime.now(ZoneId.of("Asia/Kolkata"));
+        System.out.println(istTime);
+    }
+}
