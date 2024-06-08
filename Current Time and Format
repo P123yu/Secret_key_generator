@@ -1,0 +1,36 @@
+// Get Current Time
+
+import java.time.LocalTime;
+import java.time.ZoneId;
+public class Main {
+    public static void main(String[] args) {
+        LocalTime istTime = LocalTime.now(ZoneId.of("Asia/Kolkata"));
+        System.out.println(istTime);
+    }
+}      ==> suppose output 12:16:17.213536   => HH:mm:ss
+
+
+============  short seconds =============================================
+
+
+// if you see here 12:16:17.213536  seconds is too large so 
+
+hh represents the hour of the day (01-12) in 12-hour format.
+mm represents the minutes of the hour (00-59).
+ss represents the seconds of the minute (00-59).
+
+ dateTime=12:16:17.213536
+ String formattedDateTime = dateTime.format(formatter);   => 12:16:17   output
+
+
+=========================  format time or date according to ourselves  (it means change position of day,month,year , hour,minute,second)  =========================
+
+// DateTimeFormatter formatter = DateTimeFormatter.ofPattern("HH:mm:ss");   this can be ss:HH:mm    format depends on our requirement
+
+//  DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd-yyyy-MM");    => customize date like  31-2004-10   
+
+for 12 hrs format => "hh:mm:ss a"    a => for AM/PM       ||     for 24 hrs format   => "HH:mm:ss"    it means hour is in capital format for 24 hrs 
+
+// for both date and time =>  DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd-MM-yyyy hh:mm:ss a");
+
+
