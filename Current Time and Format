@@ -33,4 +33,6 @@ for 12 hrs format => "hh:mm:ss a"    a => for AM/PM       ||     for 24 hrs form
 
 // for both date and time =>  DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd-MM-yyyy hh:mm:ss a");
 
+// for month like 9 july 2024 => "dd MMMM yyyy hh:mm:ss a"
+
 
